@@ -1,0 +1,63 @@
+mat-grid-tile {
+  background: #FAFAFA;
+  border: 0.5px solid black;
+}
+
+.eventClass {
+  background: rgb(126, 129, 20);
+  border: 0.5px solid #4CAF50;
+}
+
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnHeaderElement {
+  text-align: center;
+  flex: 3;
+  border: 0.5px solid black;
+}
+.columnHeaderElement>div {
+  padding-left: 40px;
+
+}
+
+.seperateColumn {
+  text-align: center;
+  flex: 1;
+  border: 0.5px solid black;
+}
+
+
+.column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.seperateBox {
+  flex: 1;
+  border: 0.5px solid black;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.box {
+  border: 0.5px solid black;
+  /* text-align: center; */
+  width: 100px;
+  height: 50px;
+  flex: 3;
+}
+
+.inerr-row {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,40 @@
+<div class="columnHeader">
+
+  <div class="columnHeaderElement">
+
+    <div>
+      {{dates[0]}}
+    </div>
+
+  </div>
+
+  <div class="columnHeaderElement">
+    {{dates[1]}}
+  </div>
+
+  <div class="columnHeaderElement">
+    {{dates[2]}}
+  </div>
+
+</div>
+
+<div class="column">
+
+  <div class="row" *ngFor="let column of grid;let i = index">
+
+    <div class="inerr-row" *ngFor="let row of column ; let j=index">
+
+      <div class="seperateBox" *ngIf="i===0">
+        {{times[j].digit_12 + ' ' + times[j].period}}
+      </div>
+
+      <div class="box" [ngStyle]="{background : row.color , border : row.border }">
+        <label>{{row.title}}</label>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
